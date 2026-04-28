@@ -1,6 +1,6 @@
-# WealthGrowth Privacy Policy
+# 财记Folio Privacy Policy
 
-Static GitHub Pages site that hosts the privacy policy for the WealthGrowth iOS app.
+Static GitHub Pages site that hosts the privacy policy for the 财记Folio iOS app.
 
 The published policy lives at `index.md` and is rendered at:
 <https://icekarl.github.io/wealthgrowth-privacy/>
