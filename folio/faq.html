@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>财记 Folio 常见问题 - 总资产、收益、基金、定投与数据说明</title>
+  <meta name="description" content="财记 Folio 常见问题：总资产怎么算、收益怎么算、美元现金为什么有收益、基金净值为什么延迟、定投计划是否会下单、数据保存在哪里。">
+  <meta property="og:title" content="财记 Folio 常见问题">
+  <meta property="og:description" content="总资产、成本价、收益、外币现金、基金净值、LOF、定投和数据同步的计算口径说明。">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="assets/app-icon.png">
+  <link rel="canonical" href="https://icekarl.github.io/wealthgrowth-privacy/folio/faq.html">
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "财记 Folio 是什么？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "财记 Folio 是个人资产记录与组合追踪工具，用来手动记录股票、基金、现金、黄金、加密货币等持仓，并查看参考市值、成本、收益和资金进出。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "首页总资产是怎么计算的？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "总资产等于每一项持仓的当前参考市值加总，并折算到主显示币种。单项市值通常由持有数量、最新价格和汇率共同决定。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "财记 Folio 的收益是怎么计算的？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "持仓总收益通常等于当前市值减去持仓成本。当日或区间收益会扣除这段时间的资金进出，尽量反映资产价格和汇率变化带来的价值变化。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "美元现金为什么也会有收益？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "因为外币资产会折算成主币种显示。美元金额没有变化时，只要汇率变化，折算后的资产价值也会变化，因此会体现在收益里。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "基金定投计划会替我下单吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不会。定投计划只是记账助手，用来按频率补记买入流水。财记 Folio 不参与任何真实资金交易，也不替用户向基金平台提交订单。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "财记 Folio 会上传我的完整资产数据吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不会把完整资产组合、交易明细、备注或现金余额上传到财记 Folio 服务器。Pro 用户启用 iCloud 同步时，数据存放在用户自己的 Apple iCloud 私有数据库中。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="财记 Folio 首页">
+      <img src="assets/app-icon.png" alt="财记 Folio 图标" width="40" height="40">
+      <span>财记 Folio</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="index.html#features">功能</a>
+      <a href="faq.html">FAQ</a>
+      <a href="articles.html">文章</a>
+      <a href="about.html">关于</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">FAQ</p>
+      <h1>财记 Folio 常见问题</h1>
+      <p>这里把总资产、成本、收益、外币、基金、定投、数据同步等高频问题整理成可直接引用的答案。</p>
+    </section>
+
+    <section class="content-page">
+      <article class="prose">
+        <h2>基础定位</h2>
+        <details open>
+          <summary>财记 Folio 是什么？</summary>
+          <p>财记 Folio 是一款个人资产记录与组合追踪工具，帮你手动记录股票、基金、现金等资产的买卖与持仓，查看参考市值、收益走势和资金进出。</p>
+        </details>
+        <details>
+          <summary>财记 Folio 会参与资金交易吗？</summary>
+          <p>不会。财记 Folio 不参与任何实际资金交易，不提供证券经纪、资产托管、基金申购、加密货币钱包或交易服务。</p>
+        </details>
+
+        <h2>总资产与收益</h2>
+        <details>
+          <summary>首页总资产是怎么计算的？</summary>
+          <p>总资产等于你每一项持仓的当前参考市值加总，并折算到主显示币种。单项市值通常等于持有数量乘以最新价格，再按汇率折算。</p>
+        </details>
+        <details>
+          <summary>收益是不是现价减成本？</summary>
+          <p>持仓总收益通常可以理解为当前市值减持仓成本。当日收益或某段时间收益还需要扣除这期间的资金进出，避免把新投入的钱误算成收益。</p>
+        </details>
+        <details>
+          <summary>成本价是我自己填的，还是 App 算的？</summary>
+          <p>财记 Folio 会按移动加权平均成本自动计算。你每记录一笔买入，系统会把金额并入成本池重新摊平；卖出时按比例扣减。</p>
+        </details>
+        <details>
+          <summary>周末、停牌、节假日没有行情，市值怎么算？</summary>
+          <p>会使用最近一个有效收盘价。这样休市日不会因为没有新行情就把资产算成 0 或空白。</p>
+        </details>
+
+        <h2>外币与多市场资产</h2>
+        <details>
+          <summary>美元现金为什么也会有收益？</summary>
+          <p>因为外币资产会折算成主币种显示。美元金额没有变化时，只要美元兑人民币汇率变化，折算后的资产价值也会变化，因此会体现在收益里。</p>
+        </details>
+        <details>
+          <summary>BTC 价格没动，为什么人民币收益会变？</summary>
+          <p>如果 BTC 以美元计价，财记 Folio 会先按美元价格计算价值，再折算到主币种。币价不变但汇率变化时，折算后的人民币价值仍然会变化。</p>
+        </details>
+        <details>
+          <summary>卖出股票后现金去哪了？</summary>
+          <p>卖出股票后，回来的钱会进入同一账户下对应币种的证券账户现金。例如卖出美股回到美元现金，卖出 A 股回到人民币现金。</p>
+        </details>
+
+        <h2>基金与定投</h2>
+        <details>
+          <summary>为什么收益日历今天没有某些基金？</summary>
+          <p>基金净值通常不是实时公布。当天净值要等当天晚间甚至下一天才出来，QDII 等海外基金可能更晚。净值公布后，财记 Folio 会把涨跌补进实际所属日期。</p>
+        </details>
+        <details>
+          <summary>LOF 基金场内价和场外净值有什么区别？</summary>
+          <p>LOF 有场内交易价格和场外申赎净值，两者可能存在折价或溢价。财记 Folio 默认按场内价计价；如果你按场外净值申购，可切换为场外份额口径。</p>
+        </details>
+        <details>
+          <summary>基金定投计划会替我下单吗？</summary>
+          <p>不会。定投计划只是记账助手，用来按设定频率补记买入流水。它不替你向基金平台提交订单，也不参与任何资金流动。</p>
+        </details>
+        <details>
+          <summary>好几天没打开 App，错过的定投会丢吗？</summary>
+          <p>不会。下次打开时，财记 Folio 会按计划把错过的期数用对应日期的参考价格补记齐全。遇到休市日，会按你设置的规则顺延或提前。</p>
+        </details>
+
+        <h2>数据与隐私</h2>
+        <details>
+          <summary>我的数据存在哪里？</summary>
+          <p>你手动输入的资产、交易、现金账户、成本、备注和昵称保存在本机。Pro 用户的资产、交易、定投与历史快照可以通过 Apple iCloud 私有数据库在同一 Apple ID 的设备间同步。</p>
+        </details>
+        <details>
+          <summary>行情数据准吗？</summary>
+          <p>行情、汇率和历史价格来自第三方数据源，用于个人记账和参考估值，可能与券商端存在细小差异，不作为交易依据。</p>
+        </details>
+
+        <div class="notice-box">
+          <strong>说明</strong>
+          <p>更完整的 App 内说明底稿保留在 <a href="user-guide.md">使用说明</a>。官网 FAQ 会优先整理搜索和 AI 问答更常引用的问题。</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>财记 Folio</strong>
+      <p>个人资产记录与组合追踪工具。</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="articles.html">文章</a>
+      <a href="about.html">关于</a>
+      <a href="privacy.html">隐私政策</a>
+      <a href="terms.html">服务条款</a>
+    </div>
+  </footer>
+</body>
+</html>

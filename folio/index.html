@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>财记 Folio - 个人资产记录与组合追踪工具</title>
+  <meta name="description" content="财记 Folio 是一款个人资产记录工具，用来手动记录股票、基金、现金、黄金、加密货币等持仓，并自动计算参考市值、成本、收益和汇率换算。">
+  <meta name="keywords" content="财记 Folio, 个人资产记录, 股票基金记账, 持仓记录, 基金定投记录, 多币种资产管理, LOF 基金, QDII 基金">
+  <meta property="og:title" content="财记 Folio - 个人资产记录与组合追踪工具">
+  <meta property="og:description" content="在一个地方手动记录股票、基金、现金、黄金、加密货币等资产，查看参考市值、成本、收益和资金进出。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/app-icon.png">
+  <link rel="canonical" href="https://icekarl.github.io/wealthgrowth-privacy/folio/">
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="alternate" type="text/plain" href="llms.txt" title="财记 Folio LLM 摘要">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "财记 Folio",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "iOS",
+    "description": "财记 Folio 是一款个人资产记录与组合追踪工具，用来手动记录股票、基金、现金、黄金、加密货币等持仓，并自动计算参考市值、成本、收益和汇率换算。",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "CNY"
+    },
+    "featureList": [
+      "股票、基金、现金、黄金、加密货币等资产记录",
+      "参考市值、移动加权平均成本和收益计算",
+      "多币种资产与汇率换算",
+      "基金定投计划与补记",
+      "iCloud 私有数据库同步"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "财记 Folio"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "财记 Folio 是什么？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "财记 Folio 是个人资产记录与组合追踪工具，用来手动记录股票、基金、现金、黄金、加密货币等持仓，并查看参考市值、成本、收益和资金进出。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "财记 Folio 会参与资金交易吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不会。财记 Folio 不参与任何实际资金交易，不提供证券经纪、资产托管、加密货币钱包或投资建议。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "财记 Folio 适合记录哪些资产？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "财记 Folio 适合记录股票、基金、现金、理财、黄金、加密货币等个人资产，也支持多币种折算、基金定投记录和持仓交易记录。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "美元现金为什么也会产生收益？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "因为财记 Folio 会把外币资产折算成主币种显示。即使美元金额没有变化，只要汇率变化，折算后的资产价值也会变化，因此会体现在收益中。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="财记 Folio 首页">
+      <img src="assets/app-icon.png" alt="财记 Folio 图标" width="40" height="40">
+      <span>财记 Folio</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#features">功能</a>
+      <a href="#scenarios">场景</a>
+      <a href="faq.html">FAQ</a>
+      <a href="articles.html">文章</a>
+      <a href="about.html">关于</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">个人资产记录与组合追踪工具</p>
+        <h1 id="hero-title">财记 Folio</h1>
+        <p class="hero-summary">
+          手动记录股票、基金、现金、黄金、加密货币等持仓，自动整理参考市值、成本、收益、汇率换算和资金进出。
+        </p>
+        <div class="cta-row" aria-label="下载与说明">
+          <a class="button primary" href="https://apps.apple.com/cn/search?term=%E8%B4%A2%E8%AE%B0" rel="noopener">App Store 搜索财记</a>
+          <a class="button secondary" href="faq.html">查看常见问题</a>
+        </div>
+        <p class="trust-note">
+          财记 Folio 不参与任何资金流动，不替代券商、基金平台或交易所数据，不提供投资建议。
+        </p>
+      </div>
+
+      <div class="hero-visual" aria-label="财记 Folio 产品预览">
+        <div class="phone-shell">
+          <div class="phone-screen">
+            <div class="screen-top">
+              <img src="assets/app-icon.png" alt="" width="44" height="44">
+              <div>
+                <p>总资产</p>
+                <strong>¥ 286,430.18</strong>
+              </div>
+            </div>
+            <div class="metric-grid">
+              <div>
+                <span>今日参考收益</span>
+                <strong class="gain">+¥ 1,286.40</strong>
+              </div>
+              <div>
+                <span>持仓资产</span>
+                <strong>28 项</strong>
+              </div>
+            </div>
+            <div class="asset-list" aria-hidden="true">
+              <div class="asset-row">
+                <span class="asset-dot stock"></span>
+                <span>股票</span>
+                <strong>42%</strong>
+              </div>
+              <div class="asset-row">
+                <span class="asset-dot fund"></span>
+                <span>基金</span>
+                <strong>31%</strong>
+              </div>
+              <div class="asset-row">
+                <span class="asset-dot cash"></span>
+                <span>现金 / 理财</span>
+                <strong>18%</strong>
+              </div>
+              <div class="asset-row">
+                <span class="asset-dot gold"></span>
+                <span>黄金 / 加密资产</span>
+                <strong>9%</strong>
+              </div>
+            </div>
+            <div class="calendar-strip" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+        <div class="icon-strip" aria-label="财记 Folio 图标样式">
+          <img src="assets/icon-rose.png" alt="玫瑰棕图标" width="52" height="52">
+          <img src="assets/icon-indigo.png" alt="黛蓝图标" width="52" height="52">
+          <img src="assets/icon-classic.png" alt="经典图标" width="52" height="52">
+          <img src="assets/icon-bronze.png" alt="鎏金图标" width="52" height="52">
+        </div>
+      </div>
+    </section>
+
+    <section class="statement-band" aria-label="产品定位">
+      <div>
+        <strong>一句话：</strong>
+        你只管如实记录每一笔买卖，剩下的参考市值、成本、收益和汇率换算，交给财记 Folio 自动整理。
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p class="eyebrow">Core Features</p>
+        <h2 id="features-title">为资产记录而设计，不是流水账本</h2>
+        <p>财记 Folio 更关注“我现在拥有哪些资产、成本是多少、收益怎么变”，适合长期维护个人持仓。</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>统一记录多类资产</h3>
+          <p>股票、基金、现金、理财、黄金、加密货币都可以放在一个组合里，按类型和标签查看。</p>
+        </article>
+        <article class="feature-card">
+          <h3>自动计算成本与收益</h3>
+          <p>按移动加权平均成本处理买入、卖出、送股和校准，减少手动维护均价的麻烦。</p>
+        </article>
+        <article class="feature-card">
+          <h3>多币种与汇率换算</h3>
+          <p>美元、港币、人民币等资产统一折算到主币种，外币现金和美股、港股、BTC 的汇率影响会被纳入参考收益。</p>
+        </article>
+        <article class="feature-card">
+          <h3>基金与定投记录</h3>
+          <p>支持基金净值、QDII 时间差、LOF 场内场外口径，以及按周期补记定投买入流水。</p>
+        </article>
+        <article class="feature-card">
+          <h3>现金联动与分红</h3>
+          <p>卖出股票、现金分红会回到对应币种的证券账户现金，帮助你核对资金进出。</p>
+        </article>
+        <article class="feature-card">
+          <h3>本地优先，iCloud 同步</h3>
+          <p>资产和交易记录保存在本机；Pro 用户可通过 Apple iCloud 私有数据库在同一 Apple ID 设备间同步。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section" id="scenarios" aria-labelledby="scenarios-title">
+      <div class="section-heading align-left">
+        <p class="eyebrow">Use Cases</p>
+        <h2 id="scenarios-title">适合这些问题</h2>
+        <p>如果你经常在 Excel、券商 App、基金平台和记账软件之间来回对账，财记 Folio 解决的是中间那层“个人资产记录”。</p>
+      </div>
+      <div class="scenario-list">
+        <article>
+          <span>01</span>
+          <h3>我想统一看 A 股、港股、美股、基金和现金</h3>
+          <p>不同市场、不同币种的资产可以放在一个总览里，按主币种查看折算后的参考总资产。</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>我不想连接券商，只想自己维护持仓</h3>
+          <p>财记 Folio 是手动记录工具，不要求登录券商账户，不代你下单，也不托管资产。</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>我想知道收益到底来自价格还是汇率</h3>
+          <p>外币现金、美股、港股、黄金、BTC 等资产都会受到汇率影响，页面和 FAQ 会解释每种口径。</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>我有基金定投和历史买卖，需要补齐记录</h3>
+          <p>可记录真实交易流水，也可设置定投计划，让 App 在打开时补记到期批次。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section compare-section" aria-labelledby="compare-title">
+      <div class="section-heading">
+        <p class="eyebrow">Positioning</p>
+        <h2 id="compare-title">财记 Folio 不是什么</h2>
+      </div>
+      <div class="compare-grid">
+        <div>
+          <h3>不是交易平台</h3>
+          <p>不提供证券经纪、基金申购、加密货币钱包或任何形式的在线交易。</p>
+        </div>
+        <div>
+          <h3>不是投资顾问</h3>
+          <p>不提供收益预测、买卖建议、资产配置建议或个股基金推荐。</p>
+        </div>
+        <div>
+          <h3>不是券商数据替代品</h3>
+          <p>行情、汇率和历史价格用于个人记账与估值参考，请以官方渠道数据为准。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-title">常见问题</h2>
+        <p>这些问题也是 AI 搜索最容易引用的内容。完整版本见常见问题页。</p>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>财记 Folio 是什么？</summary>
+          <p>财记 Folio 是一款个人资产记录与组合追踪工具，帮你手动记录股票、基金、现金等资产的买卖与持仓，查看参考市值、收益走势和资金进出。</p>
+        </details>
+        <details>
+          <summary>首页总资产是怎么计算的？</summary>
+          <p>总资产等于每一项持仓的当前参考市值加总，并折算到你的主显示币种。单项市值通常由持有数量、最新价格和汇率共同决定。</p>
+        </details>
+        <details>
+          <summary>成本价是我自己填的，还是 App 算的？</summary>
+          <p>财记 Folio 会按移动加权平均成本自动计算。你每记录一笔买入，系统会把金额并入成本池重新摊平；卖出时按比例扣减。</p>
+        </details>
+        <details>
+          <summary>美元现金为什么也会有收益？</summary>
+          <p>因为外币资产会折算成主币种显示。美元金额没有变化时，只要美元兑人民币汇率变化，折算后的资产价值也会变化，因此会体现在收益里。</p>
+        </details>
+        <details>
+          <summary>基金定投计划会替我下单吗？</summary>
+          <p>不会。定投计划只是记账助手，用来按频率补记买入流水。财记 Folio 不参与任何真实资金交易，也不替你向基金平台提交订单。</p>
+        </details>
+        <details>
+          <summary>我的数据会上传到财记 Folio 服务器吗？</summary>
+          <p>你手动输入的资产、交易、现金账户、成本和备注保存在本机。Pro 用户启用 iCloud 同步时，数据存放在用户自己的 Apple iCloud 私有数据库中。</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="download-band" aria-labelledby="download-title">
+      <div>
+        <h2 id="download-title">开始记录自己的资产组合</h2>
+        <p>在 App Store 搜索“财记”，或先阅读完整使用说明，了解市值、收益、基金、定投和数据同步的计算口径。</p>
+      </div>
+      <div class="cta-row">
+        <a class="button primary" href="https://apps.apple.com/cn/search?term=%E8%B4%A2%E8%AE%B0" rel="noopener">App Store 搜索财记</a>
+        <a class="button secondary light" href="faq.html">阅读常见问题</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>财记 Folio</strong>
+      <p>个人资产记录与组合追踪工具。</p>
+    </div>
+    <div class="footer-links">
+      <a href="faq.html">常见问题</a>
+      <a href="articles.html">GEO 文章</a>
+      <a href="about.html">关于</a>
+      <a href="privacy.html">隐私政策</a>
+      <a href="terms.html">服务条款</a>
+    </div>
+  </footer>
+</body>
+</html>
